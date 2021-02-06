@@ -48,7 +48,12 @@ describe('positive quantity analysis', () => {
         assert.equal(quantityTesting.addLengths(unit.getInch1() * 2, unit.getCentimeter() * 2.5), unit.getInch1() * 3);
     })
 
+    it('given addition lengths when equal should pass the test', () => {
+        assert.equal(unit.getGallons(), unit.getLitre() * 3.78);
+    })
 
-
+    it('given addition lengths when equal should pass the test', () => {
+        assert.equal(unit.getLitre(), unit.getMl() * 1000);
+    })
 
 })
