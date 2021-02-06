@@ -32,6 +32,11 @@ describe('positive quantity analysis', () => {
 
     })
 
+    it('given lengths when equal should return true', () => {
+        assert.equal(quantityTesting.addLengths(unit.getInch1() * 2, unit.getInch1() * 2), unit.getInch1() * 4);
+
+    })
+
 
 
 
