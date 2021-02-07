@@ -64,6 +64,24 @@ describe('positive quantity analysis', () => {
         assert.equal(quantityTesting.addUnits(unit.getLitre() * 1, unit.getMl() * 1000), unit.getLitre() * 2);
     })
 
+    it('given weights when equal should pass the test', () => {
+        assert.equal(unit.getKilos(), unit.getGrams() * 1000);
+    })
+
+    it('given weights when equal should pass the test', () => {
+        assert.equal(unit.getTons(), unit.getKilos() * 1000);
+    })
+
+    it('given addition  when equal should pass the test', () => {
+        assert.equal(quantityTesting.addUnits(unit.getTons() * 1, unit.getGrams() * 1000), unit.getKilos() * 1001);
+    })
+
+
+
+
+
+
+
 
 
 

@@ -6,7 +6,9 @@ let centimeter = (2 / 5) * inch1
 let ml = 1;
 let litre = 1000 * ml;
 let gallon = 3.78 * litre
-
+let grams = 1;
+let kilos = 1000 * grams;
+let tons = 1000 * kilos
 
 class Unit {
     getYard = () => {
@@ -32,6 +34,15 @@ class Unit {
     }
     getMl = () => {
         return ml;
+    }
+    getGrams = () => {
+        return grams;
+    }
+    getKilos = () => {
+        return kilos;
+    }
+    getTons = () => {
+        return tons;
     }
 
 }
