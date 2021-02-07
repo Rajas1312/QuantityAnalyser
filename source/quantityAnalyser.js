@@ -6,7 +6,7 @@ class QuantityAnalyser {
         }
         return false;
     }
-    addLengths = (quantity1, quantity2) => {
+    addUnits = (quantity1, quantity2) => {
         let quantity = quantity1 + quantity2
         return quantity
     }
